@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <style>
+        body {
+            font-family: arial, sans-serif;
+            background-color:white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+        }
+        .login-container {
+            background: white;
+            padding: 30px;
+            border-radius: 90px;
+            box-shadow: 0px 10px 10px rgba(161, 10, 86, 0.2);
+            width: 350px;
+            text-align: center;
+
+
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #03060a;
+            
+      }
+
+
+        
+        .login-container input {
+            width: 90%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #070101;
+            border-radius: 100px;
+            background-color: rgba(255, 253, 254, 0.871);
+            
+
+        }
+        .login-container button {
+            width: 50%;
+            padding: 10px;
+            background: #f131d1;
+            border: none;
+            border-radius: 100px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .login-container button:hover {
+            background: #343434;
+        }
+        
+        
+
+        .login-container {
+            background-image: url("cap.jfif")
+            
+        }
+        .login-container input:hover {
+            border-color: #4f58fd;
+        }
+        /* Background container */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #e0f7fa, #fce4ec);
+  overflow: hidden;
+}
+
+/* Butterfly animation */
+.butterfly {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-image: url("https://i.ibb.co/3Cnft1M/butterfly.png"); /* Replace with your butterfly image */
+  background-size: cover;
+  animation: fly 20s linear infinite;
+  opacity: 0.9;
+}
+
+.butterfly:nth-child(1) {
+  top: 20%;
+  left: -60px;
+  animation-delay: 0s;
+}
+.butterfly:nth-child(2) {
+  top: 50%;
+  left: -80px;
+  animation-delay: 5s;
+}
+.butterfly:nth-child(3) {
+  top: 70%;
+  left: -100px;
+  animation-delay: 10s;
+}
+
+@keyframes fly {
+  0% { transform: translateX(0) translateY(0) rotate(0deg); }
+  25% { transform: translateX(200px) translateY(-50px) rotate(15deg); }
+  50% { transform: translateX(400px) translateY(30px) rotate(-15deg); }
+  75% { transform: translateX(600px) translateY(-40px) rotate(10deg); }
+  100% { transform: translateX(100vw) translateY(0) rotate(0deg); }
+}
+
+/* Flower animation */
+.flower {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-image: url("https://i.ibb.co/sy3kMZC/flower.png"); /* Replace with your flower image */
+  background-size: cover;
+  animation: float 15s linear infinite;
+  opacity: 0.8;
+}
+
+.flower:nth-child(4) {
+  top: 10%;
+  left: 20%;
+  animation-delay: 0s;
+}
+.flower:nth-child(5) {
+  top: 30%;
+  left: 50%;
+  animation-delay: 3s;
+}
+.flower:nth-child(6) {
+  top: 60%;
+  left: 70%;
+  animation-delay: 6s;
+}
+
+@keyframes float {
+  0% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-30px) rotate(180deg); }
+  100% { transform: translateY(0) rotate(360deg); }
+}
+
+
+
+    </style>
+</head>
+<body>   
+    <!-- Animated background elements -->
+<div class="butterfly">&#129419</div>
+<div class="butterfly">🦋</div>
+<div class="butterfly">🦋</div>
+
+<div class="flower">🌸</div>
+<div class="flower">🌼</div>
+<div class="flower">🌺</div>
+
+
+<div class="login-container">
+    <h2> &#x1F4DD BIO DATA</h2>
+    <form>
+        <input type="text" placeholder="&#128100 Your name" required>
+        <input type="text" placeholder="&#128231 E-mail" required>
+        
+        
+         
+        <input type="date" id="dob" name="dob"  placeholder="date of birth" required>
+        <input type="text" placeholder="&#127968 Address" required>
+        <input type="text" placeholder="&#127979 College Name" required>
+        <input type="number" placeholder=" &#128222 Phone Number" required>
+        <button type="submit">Submit &#128077</button>
+        
+    
+        
+
+    </form>
+    </div>
+
+
+  
+
+
+<script>
+document.querySelector("form").addEventListener("submit", function(event) {
+  event.preventDefault(); 
+  alert("Submitted successfully ✅");
+});
+</script>
+</body>
+</html>
+
+
